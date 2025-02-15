@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600" prefWidth="1200" stylesheets="@../cssStyles/UserSignupPageStyle.css" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gov.iti.jets.client.controller.UserSignupController">
+   <center>
+      <HBox cache="true" focusTraversable="true" prefHeight="524.0" prefWidth="850.0">
+         <children>
+            <VBox maxHeight="1.7976931348623157E308" minHeight="300.0" minWidth="320.0" styleClass="registration-background" HBox.hgrow="SOMETIMES">
+               <children>
+                  <AnchorPane prefHeight="73.0" prefWidth="375.0" />
+                  <Label alignment="CENTER" prefHeight="70.0" prefWidth="387.0" text="REGISTRATION" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="43.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" minHeight="300.0" minWidth="500.0" prefHeight="582.0" prefWidth="511.0" spacing="3.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <TextField fx:id="firstName" layoutX="125.0" layoutY="-3.0" prefHeight="30.0" prefWidth="262.0" promptText="First Name" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="124.0" AnchorPane.topAnchor="-3.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <TextField fx:id="lastName" layoutX="126.0" layoutY="-1.0" prefHeight="42.0" prefWidth="276.0" promptText="Last Name" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="124.0" AnchorPane.topAnchor="-1.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <TextField fx:id="phoneNumber" layoutX="125.0" layoutY="1.0" prefHeight="30.0" prefWidth="262.0" promptText="Phone Number" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="124.0" AnchorPane.topAnchor="1.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <TextField fx:id="email" layoutX="125.0" layoutY="1.0" prefHeight="30.0" prefWidth="262.0" promptText="Email" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="124.0" AnchorPane.topAnchor="1.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <DatePicker fx:id="dateOfBirth" layoutX="126.0" layoutY="1.0" prefHeight="42.0" prefWidth="277.0" promptText="Date of birth" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <ComboBox fx:id="gender" layoutX="126.0" prefHeight="44.0" prefWidth="276.0" promptText="Gender" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="124.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="355.0">
+                     <children>
+                        <!-- Replace TextField with ComboBox for country -->
+                        <ComboBox fx:id="country" editable="true" layoutX="125.0" layoutY="-1.0" prefHeight="44.0" prefWidth="276.0" promptText="Country" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="431.0">
+                     <children>
+                        <TextField fx:id="password" layoutX="125.0" prefHeight="30.0" prefWidth="262.0" promptText="Password" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="124.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="396.0">
+                     <children>
+                        <TextField fx:id="confirmPassword" layoutX="125.0" layoutY="1.0" prefHeight="30.0" prefWidth="262.0" promptText="Confirm Password" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="124.0" AnchorPane.topAnchor="1.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane />
+                  <AnchorPane prefHeight="0.0" prefWidth="0.0">
+                     <children>
+                        <Button fx:id="button" layoutX="124.0" layoutY="13.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="278.0" style="-fx-background-color: white;" text="Sign up" textFill="#4943b9" onAction="#handleSignup" AnchorPane.bottomAnchor="-17.0" AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="124.0" AnchorPane.topAnchor="13.0">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

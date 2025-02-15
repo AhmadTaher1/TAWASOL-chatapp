@@ -1,0 +1,38 @@
+.backGround {
+    -fx-background-color: #82C9FF;
+}
+
+.rectangle {
+    -fx-background-color: #F0F0F0;
+    -fx-border-radius: 8px; 
+}
+
+.inviationListLabel {
+    -fx-font-weight: 800;
+    -fx-text-fill: #F0F0F0;
+    -fx-font-size: 20px; 
+    -fx-padding: 50 0 0 70; 
+}
+
+.inviationListItem {
+    -fx-background-color: #F0F0F0; 
+    -fx-background-radius: 50px; 
+     -fx-padding: 20 0 0 20;
+}
+
+.inviationListItemName {
+    -fx-font-weight: 600;
+    -fx-text-fill: #6495ED;
+    -fx-font-size: 15px; 
+    -fx-padding: 20 0 0 5;
+}
+
+.photoIcon
+{
+     -fx-padding: 20;
+}
+
+.acceptIcon
+{
+     -fx-padding: 20;
+}

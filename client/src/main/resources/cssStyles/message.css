@@ -1,0 +1,76 @@
+/* General TextFlow Styling */
+.text-flow {
+    -fx-padding: 10px;
+}
+
+/* Bold Text */
+.bold-text {
+    -fx-font-weight: bold;
+}
+
+/* Italic Text */
+.italic-text {
+    -fx-font-style: italic;
+}
+
+/* Underline Text */
+.underline-text {
+    -fx-underline: true;
+}
+
+
+/* Font Size Classes */
+.font-small {
+    -fx-font-size: 12px;
+}
+
+.font-medium {
+    -fx-font-size: 16px;
+}
+
+.font-large {
+    -fx-font-size: 24px; /* Add explicit 24px */
+}
+
+.font-extra-large {
+    -fx-font-size: 48px; /* Fix 36pt to correct px */
+}
+
+/* Font Colors */
+.text-red {
+    -fx-fill: red;
+}
+
+.text-blue {
+    -fx-fill: blue;
+}
+
+.text-green {
+    -fx-fill: green;
+}
+
+/* Background Colors - Use a surrounding Region/Pane for full effect */
+.bg-yellow {
+    -fx-background-color: yellow;
+}
+
+.bg-gray {
+    -fx-background-color: lightgray;
+}
+
+.bg-pink {
+    -fx-background-color: pink;
+}
+
+/* Custom Font Families */
+.font-arial {
+    -fx-font-family: "Arial";
+}
+
+.font-verdana {
+    -fx-font-family: "Verdana";
+}
+
+.font-tahoma {
+    -fx-font-family: "Tahoma";
+}

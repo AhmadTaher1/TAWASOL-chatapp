@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.HTMLEditor?>
+
+<BorderPane fx:id="MainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gov.iti.jets.client.controller.HomeScreenController">
+
+   <left>
+      <HBox maxWidth="1.7976931348623157E308" minWidth="350.0" prefHeight="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="600.0" prefWidth="0.0" />
+            <VBox alignment="CENTER" maxWidth="70.0" minWidth="70.0" prefHeight="600.0" prefWidth="70.0" spacing="12.0" styleClass="light-blue" stylesheets="@../cssStyles/Home.css">
+               <children>
+                  <Button fx:id="notificationbtn" mnemonicParsing="false" onAction="#handleNotificationButton" style="-fx-background-color: #67BCFE;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/bell.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="groupbtn" mnemonicParsing="false" onAction="#handleCreateGroup" style="-fx-background-color: #67BCFE;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/group-users.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="addContactbtn" mnemonicParsing="false" onAction="#handleAddContact" style="-fx-background-color: #67BCFE;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/add-user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="botbtn" mnemonicParsing="false" onAction="#handleBotButton" style="-fx-background-color: #67BCFE;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/bot.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="invitebtn" mnemonicParsing="false" onAction="#handleInvitationListButton" style="-fx-background-color: #67BCFE;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/invitation.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="blockListbtn" mnemonicParsing="false" style="-fx-background-color: #67BCFE;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/traffic-signal.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="logOutbtn" mnemonicParsing="false" onAction="#handleLogoutButton" style="-fx-background-color: #67BCFE;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/log-out.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <AnchorPane maxWidth="312.0" minWidth="290.0" prefHeight="300.0" prefWidth="312.0">
+               <children>
+                  <AnchorPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <!--                              <Image url="@../img/user.png" />-->
+                           </image>
+                        </ImageView>
+                        <Circle fx:id="userProfileImage" fill="#1f93ff00" layoutX="35.0" layoutY="33.0" radius="25.0" stroke="TRANSPARENT" strokeType="INSIDE" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="8.0" />
+                        <Text fx:id="userNameText" fill="#3ca9fd" layoutX="70.0" layoutY="37.265625" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="162.546875" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="20.0">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="EditProfilebtn" layoutX="267.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleEditProfileButton" styleClass="gray-light" AnchorPane.rightAnchor="5.0">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/pen.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="4.0" layoutY="124.0" maxHeight="30.0" maxWidth="290.0" minHeight="32.0" minWidth="290.0" prefHeight="30.0" prefWidth="150.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="100.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/search.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="searchTextField" layoutX="44.0" prefHeight="31.0" prefWidth="242.0" stylesheets="@../cssStyles/Home.css" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                           <styleClass>
+                              <String fx:value="white" />
+                              <String fx:value="reduis" />
+                           </styleClass>
+                        </TextField>
+                     </children>
+                     <styleClass>
+                        <String fx:value="reduis" />
+                        <String fx:value="white" />
+                     </styleClass>
+                  </AnchorPane>
+                  <Line endX="157.0" layoutX="122.0" layoutY="149.0" startX="-100.0" />
+                  <ScrollPane layoutX="10.0" layoutY="161.0" prefHeight="200.0" prefWidth="270.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="161.0">
+                     <content>
+                        <ListView fx:id="ContactList" onMouseClicked="#handleSelectedCard" prefHeight="830.0" prefWidth="290.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <StackPane fx:id="stackPane" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="vBox" minWidth="350.0" prefHeight="900.0" prefWidth="570.0">
+               <children>
+                  <AnchorPane maxWidth="848.0" prefHeight="53.0" prefWidth="848.0">
+                     <children>
+                        <Circle fx:id="friendImage" fill="#1f93ff00" layoutX="47.0" layoutY="26.0" radius="27.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <Text fx:id="friendName" fill="#3ca9fd" layoutX="86.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ali">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="blockbtn" layoutX="415.0" layoutY="12.0" mnemonicParsing="false" AnchorPane.rightAnchor="5.0">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/traffic-signal.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <ListView fx:id="chatListView" prefHeight="700.0" prefWidth="887.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ListView>
+                  <AnchorPane minWidth="400.0" prefHeight="132.0" prefWidth="400.0">
+                     <children>
+                        <HTMLEditor fx:id="messageField" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" minWidth="400.0" onKeyPressed="#handleEnterPress" prefHeight="200.0" prefWidth="400.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <Button fx:id="sendButton" layoutX="588.0" layoutY="121.0" mnemonicParsing="false" onAction="#handleSendButton" prefHeight="34.0" prefWidth="30.0" AnchorPane.rightAnchor="20.0">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/paper-plane.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="attachmentButton" layoutX="705.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleAttachmentButton" prefHeight="34.0" prefWidth="30.0" AnchorPane.rightAnchor="70.0">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/attach-file.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <ImageView fx:id="defaultPhoto" fitHeight="400.0" fitWidth="556.0" opacity="0.52" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </StackPane>
+   </center>
+
+</BorderPane>

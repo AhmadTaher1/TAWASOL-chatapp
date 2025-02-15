@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="52.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="../img/woman.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="50.0" prefWidth="175.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Jana" />
+            <TextFlow prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10:55 PM">
+         <HBox.margin>
+            <Insets top="25.0" />
+         </HBox.margin>
+      </Text>
+   </children>
+</HBox>

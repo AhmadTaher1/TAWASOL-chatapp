@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="hbox" maxWidth="290.0" minWidth="290.0" prefHeight="60.0" prefWidth="290.0" styleClass="contactItem" stylesheets="@../cssStyles/CreateGroup.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gov.iti.jets.client.controller.InvitationListCardController">
+   <children>
+      <Group>
+         <children>
+            <ImageView fx:id="frinedImage" fitHeight="44.0" fitWidth="44.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/woman.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="personalImg" fill="#2197ff00" layoutX="22.0" layoutY="25.0" radius="25.0" stroke="#00000002" strokeType="INSIDE" />
+         </children>
+         <HBox.margin>
+            <Insets bottom="10.0" left="7.0" />
+         </HBox.margin>
+      </Group>
+      <VBox maxWidth="142.0" minWidth="142.0" prefHeight="52.0" prefWidth="142.0">
+         <children>
+            <Text fx:id="friendNameText" fill="#3ca9fd" strokeType="OUTSIDE" strokeWidth="0.0" text="Leena Almekkawy">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets right="20.0" top="12.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+         <HBox.margin>
+            <Insets bottom="8.0" left="12.0" right="15.0" />
+         </HBox.margin>
+      </VBox>
+      <Circle fx:id="acceptIcon" fill="#2197ff29" onMouseClicked="#handleAcceptIcon" radius="10.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <HBox.margin>
+            <Insets right="10.0" top="15.0" />
+         </HBox.margin>
+      </Circle>
+      <Circle fx:id="deleteIcon" fill="#1f93ff32" onMouseClicked="#handleDeleteIcon" radius="10.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <HBox.margin>
+            <Insets top="15.0" />
+         </HBox.margin>
+      </Circle>
+   </children>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</HBox>

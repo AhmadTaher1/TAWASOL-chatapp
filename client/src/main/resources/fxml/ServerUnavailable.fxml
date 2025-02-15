@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane minHeight="400.0" minWidth="500.0" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gov.iti.jets.client.controller.ServerUnavailableController">
+   <bottom>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="500.0" prefHeight="600.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="370.0" fitWidth="475.0" layoutX="366.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="216.0" AnchorPane.leftAnchor="366.0" AnchorPane.rightAnchor="365.5497131347656" AnchorPane.topAnchor="14.0">
+               <image>
+                  <Image url="@../img/serviceUnavailable.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="reconnetcButton" fitHeight="39.0" fitWidth="33.0" layoutX="584.0" layoutY="461.0" onMouseClicked="#handleReconnctButton" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="106.0" AnchorPane.leftAnchor="584.0" AnchorPane.rightAnchor="583.0" AnchorPane.topAnchor="461.0">
+               <image>
+                  <Image url="@../img/refresh.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="209.0" layoutY="407.0" style="-fx-font-size: 22; -fx-font-weight: bold; -fx-text-fill: #3C8FC7F5;" text="We're sorry, but the server is currently unavailable. Please try again later" AnchorPane.bottomAnchor="161.0" AnchorPane.leftAnchor="209.0" AnchorPane.rightAnchor="240.0" AnchorPane.topAnchor="407.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

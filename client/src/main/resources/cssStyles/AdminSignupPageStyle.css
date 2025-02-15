@@ -1,0 +1,89 @@
+
+
+
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ced4da;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-padding: 10px 40px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #495057;
+}
+
+
+.text-field:focused {
+    -fx-border-color: #80bdff;
+    -fx-border-width: 2px;
+}
+
+
+.icon {
+    -fx-font-family: 'FontAwesome';
+    -fx-font-size: 16px;
+    -fx-text-fill: #6c757d;
+    -fx-padding: 10px;
+    -fx-translate-x: -30px;
+    -fx-position: absolute;
+}
+
+
+.button {
+    -fx-background-color: #007bff;
+    
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+
+.button:hover {
+    -fx-background-color: #0056b3;
+}
+
+
+.button:pressed {
+    -fx-background-color: #003f7f;
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+
+.registration-background {
+    -fx-background-image: url("../img/AdminSignup_background.png");
+    -fx-background-size: contain;
+    -fx-background-position: bottom;
+    -fx-background-repeat: no-repeat;
+}
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #ced4da;
+    -fx-border-radius: 4px;
+    -fx-padding: 5px;
+}
+
+.combo-box:hover {
+    -fx-border-color: #80bdff;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #495057;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.combo-box .text-field {
+    -fx-prompt-text-fill: #6c757d;
+}
+
+
+.text-field:invalid, .combo-box:invalid, .date-picker:invalid {
+    -fx-border-color: #dc3545;
+    -fx-border-width: 2px;
+}

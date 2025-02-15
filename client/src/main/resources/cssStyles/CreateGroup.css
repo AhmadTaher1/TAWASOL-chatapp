@@ -1,0 +1,34 @@
+.backGround {
+    
+    
+    -fx-background-color:   #82C9FF;
+    
+}
+
+.rectangle {
+   
+    
+    -fx-background-color:  #F0F0F0;
+    
+    -fx-border-radius: 8px
+}
+
+.creatGroupLabel
+{
+-fx-font-weight: 800;
+-fx-text-fill: #F0F0F0;
+-fx-font-size:20;
+}
+
+.contactItem
+{
+     -fx-background-color: F0F0F0;
+     -fx-background-radius:50;
+}
+
+.contactItemName
+{   
+     -fx-font-weight: 600;
+     -fx-text-fill: #6495ED;
+     -fx-font-size:15;
+}

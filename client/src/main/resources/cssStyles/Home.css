@@ -1,0 +1,40 @@
+.light-blue{
+	-fx-background-color:#67BCFE;
+}
+
+.gray-light{
+	-fx-background-color:#F0F0F0;
+}
+
+.dark-blue{
+	-fx-background-color:#3CA9FD;
+
+}
+
+.white{
+	-fx-background-color:white;
+
+}
+
+.reduis{
+	-fx-background-radius: 50px;
+}
+
+.gray-dark{
+	-fx-background-color:#9A9A9A;
+
+}
+
+.light-light-blue{
+	-fx-background-color:#DCE8FF;
+
+}
+
+.dark-blue-2
+{
+	-fx-background-color:#4399FF;
+}
+
+.button-style{
+	-fx-background-image: url(bell.png);
+}

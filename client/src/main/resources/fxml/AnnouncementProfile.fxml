@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="150.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gov.iti.jets.client.controller.AnnouncementProfileController">
+   <children>
+      <ImageView fx:id="groupProfileImage" fitHeight="103.0" fitWidth="102.0" layoutX="76.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="72.0">
+         <image>
+            <Image url="@../img/setting.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="groupProfileName" fill="#3ca9fd" layoutX="77.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TAWASOL" textAlignment="CENTER" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="36.07568359375">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Label layoutX="41.0" layoutY="258.0" text="Description" AnchorPane.leftAnchor="35.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="134.0" layoutY="244.0" startX="-100.0" />
+      <Text fill="#c9c5c5" layoutX="60.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TAWASOL TEAM" AnchorPane.leftAnchor="60.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello! Welcome to this official TAWASOL chat." wrappingWidth="177.3642578125" />
+      <Text layoutX="34.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is where you can get tips, see announcement, and hear about the newest features. Straight from us" wrappingWidth="177.3642578125" />
+   </children>
+</AnchorPane>

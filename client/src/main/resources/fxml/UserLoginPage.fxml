@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox cache="true" focusTraversable="true" prefHeight="600" prefWidth="1200" stylesheets="@../cssStyles/UserLoginPageStyle.css" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gov.iti.jets.client.controller.UserLoginController">
+   <children>
+      <VBox maxHeight="1.7976931348623157E308" minHeight="300.0" minWidth="200.0" prefHeight="500.0" prefWidth="339.0" styleClass="login-background" HBox.hgrow="SOMETIMES">
+         <children>
+            <AnchorPane prefHeight="73.0" prefWidth="375.0" />
+            <Label alignment="CENTER" prefHeight="70.0" prefWidth="387.0" text="Welcome" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="7.0" prefWidth="375.0" text="TO TAWASOL" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox minHeight="300.0" minWidth="450.0" HBox.hgrow="ALWAYS">
+         <children>
+            <AnchorPane prefHeight="81.0" prefWidth="511.0" VBox.vgrow="NEVER" />
+            <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="99.0" prefWidth="511.0" text="LOGIN" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="45.0" />
+               </font>
+            </Label>
+            <AnchorPane>
+               <children>
+                  <TextField fx:id="phoneNumberTextField" layoutX="125.0" layoutY="7.0" prefHeight="42.0" prefWidth="262.0" promptText="Phone Number" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="124.0" AnchorPane.topAnchor="7.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0">
+               <children>
+                  <PasswordField fx:id="passwordTextField" layoutX="125.0" layoutY="22.0" prefHeight="42.0" prefWidth="263.0" promptText="Password" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="22.0" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="61.0" prefWidth="491.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <Button fx:id="loginButton" layoutX="126.0" layoutY="-26.0" mnemonicParsing="false" onAction="#handleLogInButton" prefHeight="39.0" prefWidth="263.0" style="-fx-background-color: white;" text="Log In " textFill="#4943b9" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="122.0" AnchorPane.topAnchor="-26.0">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="92.0" text="Create Account?" />
+                  <Label fx:id="signupLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="50.0" text="Signup" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <AnchorPane nodeOrientation="LEFT_TO_RIGHT">
+               <children>
+                  <Button fx:id="loginAsAdminButton" alignment="CENTER" contentDisplay="CENTER" layoutX="370.0" layoutY="14.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="115.0" styleClass="login-admin" text="Login as admin" textAlignment="CENTER" AnchorPane.leftAnchor="370.0" AnchorPane.rightAnchor="376.0">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="296.0" prefHeight="61.0" prefWidth="491.0" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

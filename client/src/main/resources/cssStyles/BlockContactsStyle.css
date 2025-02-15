@@ -1,0 +1,31 @@
+
+.anchor-pane {
+    -fx-background-color: #ADD8E6;
+    -fx-border-color: #5F9EA0;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0.5, 0, 3);
+}
+
+
+.label {
+    -fx-text-fill: #2F4F4F;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+}
+
+
+.image-view {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0.5, 0, 2);
+    -fx-border-color: #5F9EA0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+.image-view:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0.5, 0, 3);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
